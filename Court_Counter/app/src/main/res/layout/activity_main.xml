@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    tools:context="com.example.anumehaagrawal.court_counter.MainActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_margin="20dp"
+        android:layout_below="@id/textView"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 points"
+        android:onClick="threeptA"
+        android:layout_margin="20dp"
+        android:layout_below="@id/textView2"
+     />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 points"
+        android:onClick="twoptA"
+        android:layout_below="@id/button"
+        android:layout_margin="20dp"
+    />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:onClick="freethrowA"
+        android:layout_margin="20dp"
+        android:layout_below="@id/button2"
+       />
+
+        <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:onClick="reset"
+        android:text="Reset" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:layout_margin="20dp"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="20dp"
+            android:layout_below="@id/textView3"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 points"
+            android:onClick="threeptB"
+            android:layout_margin="20dp"
+            android:layout_below="@id/textView3"
+            />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 points"
+            android:onClick="twoptB"
+            android:layout_below="@id/button1"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Throw"
+            android:onClick="freethrowB"
+            android:layout_margin="20dp"
+            android:layout_below="@id/button5"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
